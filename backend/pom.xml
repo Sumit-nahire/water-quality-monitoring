@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -14,7 +15,8 @@
 	<name>backend</name>
 	<description>Backend for Water Quality Monitoring project</description>
 	<properties>
-		<java.version>11</java.version>
+		<!-- Java 11 वरून 17 केले (Spring Boot 3 साठी गरजेचे) -->
+		<java.version>17</java.version> 
 	</properties>
 	<dependencies>
 		<dependency>
@@ -43,9 +45,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-boot-starter</artifactId>
-			<version>3.0.0</version> <!-- Or the latest version -->
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.5.0</version>
 		</dependency>
 
 	</dependencies>
